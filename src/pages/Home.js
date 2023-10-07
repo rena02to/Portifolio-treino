@@ -1,9 +1,7 @@
-import NavBar from './../layout/NavBar';
-
 function Home(){
     return(
-        <div>
-            <NavBar />
+        <div id="home">
+            <h1>Home</h1>
         </div>
     );
 }

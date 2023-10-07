@@ -2,15 +2,38 @@
     display: flex;
     background-color: black;
     margin-top: 0%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 7vh;
 }
 
 .logo{
     color: green;
     font-size: 2em;
-    text-shadow: 5px 5px 5px rgba(0, 0, 255, 1);
+    text-shadow: 5px 5px 5px rgba(0, 0, 255, 0.5);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 2em;
 }
 
-.navBar p{
+.logo:hover{
+    text-shadow: 5px 5px 5px rgba(0, 200, 0, 0.5);
+    color: blue;
+}
+
+.elementos{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin-right: 4em;
+}
+
+.navBar li{
+    color: white;
+    margin-right: 2em;
+}
+
+.navBar a{
+    text-decoration: none;
     color: white;
 }

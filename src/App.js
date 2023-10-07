@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
+import Main from './pages/Main';
 import NotFound from './pages/NotFound';
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
-          <Route exact path="/" element={<Home />} />
+          <Route exact path="/" element={<Main />} />
           <Route path='/*' element={<NotFound />} />
         </Routes>
       </Router>
