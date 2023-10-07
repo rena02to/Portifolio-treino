@@ -11,14 +11,34 @@
 }
 
 .NotFound h1{
-    margin-top: 3%;
     font-size: 3.5em;
     color: red;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+    margin: 3% 5% 0 5%;
+    text-align: center;
 }
 
 .NotFound p{
-    margin-top: 0em;
     font-size: 1.5em;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+    margin: 1% 5% 2% 5%;
+    text-align: center;
+}
+
+@media (max-width: 1400px) {
+    .NotFound img{
+        width: 50%;
+    }
+}
+
+@media (max-width: 900px) {
+    .NotFound img{
+        width: 60%;
+    }
+}
+
+@media (max-width: 700px) {
+    .NotFound img{
+        width: 80%;
+    }
 }
