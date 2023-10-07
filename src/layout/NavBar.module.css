@@ -1,0 +1,16 @@
+.navBar{
+    display: flex;
+    background-color: black;
+    margin-top: 0%;
+}
+
+.logo{
+    color: green;
+    font-size: 2em;
+    text-shadow: 5px 5px 5px rgba(0, 0, 255, 1);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.navBar p{
+    color: white;
+}
