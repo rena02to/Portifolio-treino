@@ -12,13 +12,13 @@ function NavBar(){
     return(
         <div>
             <nav className={style.navBar}>
-                <a href='#home' onClick={handleLinkClick}><h1 className={style.logo}>&lt; RA /&gt;</h1></a>
+                <a href='#home' onClick={handleLinkClick}><h1 className={style.logo}>&lt;RA/&gt;</h1></a>
                 <ul className={style.elementos}>
-                    <li><a href='#home' onClick={handleLinkClick}>Home</a></li>
-                    <li><a href='#projetos' onClick={handleLinkClick}>Projetos</a></li>
-                    <li><a href='#experiencias' onClick={handleLinkClick}>Experiências</a></li>
-                    <li><a href='#sobre' onClick={handleLinkClick}>Sobre</a></li>
-                    <li><button href='#contato' onClick={handleLinkClick}>Contate-me</button></li>
+                    <li><a className={style.home} href='#home' onClick={handleLinkClick}><p>Home</p></a></li>
+                    <li><a className={style.projetos} href='#projetos' onClick={handleLinkClick}><p>Projetos</p></a></li>
+                    <li><a className={style.experiencias} href='#experiencias' onClick={handleLinkClick}><p>Experiências</p></a></li>
+                    <li><a className={style.sobre} href='#sobre' onClick={handleLinkClick}><p>Sobre</p></a></li>
+                    <li><button className={style.contate} href='#contato' onClick={handleLinkClick}><p>Contate-me</p></button></li>
                 </ul>
             </nav>
         </div>

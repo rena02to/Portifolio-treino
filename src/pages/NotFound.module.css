@@ -33,12 +33,12 @@
 
 @media (max-width: 900px) {
     .NotFound img{
-        width: 60%;
+        width: 70%;
     }
 }
 
 @media (max-width: 700px) {
     .NotFound img{
-        width: 80%;
+        width: 90%;
     }
 }

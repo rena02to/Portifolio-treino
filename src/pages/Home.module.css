@@ -1,0 +1,89 @@
+.home{
+    height: 97vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 25% 0 20%;
+}
+
+.home img{
+    height: 60%;
+    margin-left: 0;
+}
+
+.name{
+    margin-top: 0em;
+    margin-bottom: 0em;
+    font-size: 4em;
+}
+
+.ola, .dev{
+    font-size: 2em;
+}
+
+.ola{
+    margin-bottom: 0;
+}
+
+.dev{
+    margin-top: 0;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20%;
+    justify-content: center;
+}
+
+.home a{
+    text-decoration: none;
+}
+
+.botoes{
+    display: flex;
+    flex-direction: row;
+}
+
+.linkedin, .github{
+    width: 12em;
+    height: 3em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 15px;
+    color: black;
+    justify-content: center;
+    box-shadow: 0px 0px 10px 8px rgba(0, 255, 255, 0.5);
+}
+
+.linkedin:hover, .github:hover{
+    font-weight: 500;
+    text-shadow: 5px 5px 5px black;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.linkedin svg{
+    color: blue;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    width: 2em;
+    height: 2em;
+}
+
+.linkedin p{
+    margin-right: 0.5em;
+}
+
+.github{
+    margin-left: 3em;
+}
+
+.github svg{
+    color: black;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    width: 2em;
+    height: 2em;
+}
