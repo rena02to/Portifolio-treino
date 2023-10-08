@@ -7,6 +7,7 @@ import Sobre from './Sobre';
 import Contato from './Contato';
 
 function Main(){
+
     return(
         <div className={style.main}>
             <NavBar />

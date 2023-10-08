@@ -1,6 +1,8 @@
+import style from './Sobre.module.css';
+
 function Sobre(){
     return(
-        <div id="sobre">
+        <div className={style.sobre} id="sobre">
             <h1>Sobre</h1>
         </div>
     );

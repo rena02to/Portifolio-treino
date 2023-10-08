@@ -1,14 +1,26 @@
-import dev from './../imagens/11436094_4707119.svg';
+import dev from './../imagens/ilustracao.svg';
 import style from './Home.module.css';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { TbBrandGithubFilled } from 'react-icons/tb';
+import { useEffect } from 'react';
 
 function Home(){
+    useEffect(() => {
+        const elemento = document.getElementById('name');
+        const texto = elemento.innerHTML.split('');
+        elemento.innerHTML = '';
+        
+        texto.forEach((letra, i) => {
+            setTimeout(() =>
+                elemento.innerHTML += letra, 200 * i)
+        });
+    }, [])
+
     return(
         <div id="home" className={style.home}>
             <div className={style.texto}>
                 <h2 className={style.ola}>Olá, eu sou</h2>
-                <h1 className={style.name}>Renato Alves,</h1>
+                <h1 id='name' className={style.name}>Renato Alves,</h1>
                 <h2 className={style.dev}>Desenvolvedor front-end</h2>
                 <div className={style.botoes}>
                     <a href='https://linkedin.com/in/renato-alves-2284a6236' target='_blank' rel='noopener noreferrer'>
