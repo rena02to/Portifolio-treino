@@ -8,7 +8,7 @@
 }
 
 .home img{
-    height: 70%;
+    height: 40em;
     margin-left: 0;
     margin-right: 15%;
 }
@@ -144,13 +144,11 @@
 }
 
 @media (max-width: 1000px){
-    .home img{
-        height: 53%;
-    }
-}
-
-@media (min-width: 900px){
     .home{
+        flex-direction: column-reverse;
         justify-content: center;
+    }
+    .home img{
+        height: 25em;
     }
 }

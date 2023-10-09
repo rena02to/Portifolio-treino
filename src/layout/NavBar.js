@@ -32,10 +32,11 @@ function NavBar(){
         <div>
             <nav className={style.navBar}>
                 <a href='#home' onClick={handleLinkClick}><h1 className={style.logo}>&lt;RA/&gt;</h1></a>
-                {windowSize > 900 ?
+                {windowSize > 1000 ?
                     (<ul className={style.elementos}>
                         <li><a className={style.home} href='#home' onClick={handleLinkClick}><p>Home</p></a></li>
                         <li><a className={style.projetos} href='#projetos' onClick={handleLinkClick}><p>Projetos</p></a></li>
+                        <li><a className={style.certificacoes} href='#certificações' onClick={handleLinkClick}><p>Certificações</p></a></li>
                         <li><a className={style.experiencias} href='#experiencias' onClick={handleLinkClick}><p>Experiências</p></a></li>
                         <li><a className={style.sobre} href='#sobre' onClick={handleLinkClick}><p>Sobre</p></a></li>
                         <li><button className={style.contate} href='#contato' onClick={handleLinkClick}>Contate-me</button></li>

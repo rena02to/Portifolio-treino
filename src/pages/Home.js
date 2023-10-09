@@ -2,11 +2,9 @@ import dev from './../imagens/ilustracao.svg';
 import style from './Home.module.css';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { TbBrandGithubFilled } from 'react-icons/tb';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 
 function Home(){
-    const [windowSize, setWindowSize] = useState(window.outerWidth);
-
     useEffect(() => {
         const elemento = document.getElementById('name');
         const texto = elemento.innerHTML.split('');
@@ -17,17 +15,6 @@ function Home(){
                 elemento.innerHTML += letra, 200 * i)
         });
     }, [])
-
-    const updateWindowSize = () => {
-        setWindowSize(window.outerWidth);
-    };
-    
-    useEffect(() => {
-        window.addEventListener('resize', updateWindowSize);
-        return () => {
-            window.removeEventListener('resize', updateWindowSize);
-        };
-    }, []);
 
     return(
         <div id="home" className={style.home}>
@@ -50,7 +37,7 @@ function Home(){
                     </a>
                 </div>
             </div>
-            {windowSize > 900 && <img alt='dev' src={dev} />}
+            <img alt='dev' src={dev} />
         </div>
     );
 }
