@@ -6,6 +6,7 @@ import Experiencias from './Experiencias';
 import Sobre from './Sobre';
 import Contato from './Contato';
 import Footer from './../layout/Footer';
+import Certificacoes from './Certificacoes';
 
 function Main(){
 
@@ -14,6 +15,7 @@ function Main(){
             <NavBar />
             <Home />
             <Projetos />
+            <Certificacoes />
             <Experiencias />
             <Sobre />
             <Contato />

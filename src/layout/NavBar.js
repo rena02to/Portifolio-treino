@@ -51,6 +51,7 @@ function NavBar(){
                                 <ul className={style.elementosLateral}>
                                     <li><a className={style.home} href='#home' onClick={handleLinkClick}><p>Home</p></a></li>
                                     <li><a className={style.projetos} href='#projetos' onClick={handleLinkClick}><p>Projetos</p></a></li>
+                                    <li><a className={style.certificacoes} href='#certificações' onClick={handleLinkClick}><p>Certificações</p></a></li>
                                     <li><a className={style.experiencias} href='#experiencias' onClick={handleLinkClick}><p>Experiências</p></a></li>
                                     <li><a className={style.sobre} href='#sobre' onClick={handleLinkClick}><p>Sobre</p></a></li>
                                     <li><button className={style.contate} href='#contato' onClick={handleLinkClick}>Contate-me</button></li>
