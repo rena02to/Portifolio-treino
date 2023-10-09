@@ -47,7 +47,7 @@ function Home(){
                     </a>
                 </div>
             </div>
-            {windowSize > 900 && <img alt='dev' src={dev} />}
+            {windowSize > 600 && <img alt='dev' src={dev} />}
         </div>
     );
 }
