@@ -5,6 +5,7 @@ import Projetos from './Projetos';
 import Experiencias from './Experiencias';
 import Sobre from './Sobre';
 import Contato from './Contato';
+import Footer from './../layout/Footer';
 
 function Main(){
 
@@ -16,6 +17,7 @@ function Main(){
             <Experiencias />
             <Sobre />
             <Contato />
+            <Footer />
         </div>
     );
 }
