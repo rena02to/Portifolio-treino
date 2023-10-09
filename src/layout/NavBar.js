@@ -4,10 +4,10 @@ import { FaBars } from 'react-icons/fa';
 
 function NavBar(){
     const [menuOpen, setMenuOpen] = useState(false);
-    const [windowSize, setWindowSize] = useState(window.innerWidth);
+    const [windowSize, setWindowSize] = useState(window.outerWidth);
 
     const updateWindowSize = () => {
-        setWindowSize(window.innerWidth);
+        setWindowSize(window.outerWidth);
     };
     
     useEffect(() => {

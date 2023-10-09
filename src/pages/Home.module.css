@@ -149,7 +149,7 @@
     }
 }
 
-@media (max-width: 900px){
+@media (min-width: 900px){
     .home{
         justify-content: center;
     }
