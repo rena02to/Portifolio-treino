@@ -146,14 +146,44 @@
     letter-spacing: 4px;
 }
 
-.enviado, .naoEnviado{
+.enviado, .naoEnviadom ,.enviando{
     margin-top: 0 ;
     margin-bottom: 1em;
+}
+
+.enviado, .naoEnviado{
     font-size: 40px !important;
     font-weight: 300 !important;
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.8) !important;
 }
 
+.enviando{
+    color: rgb(75, 75, 75) !important;
+    font-size: 30px !important;
+    font-weight: 200 !important;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2) !important;
+    padding: 0 !important;
+    margin-top: 1em;
+}
+
 .naoEnviado{
     color: red !important;
+}
+
+@media (max-width: 500px) {
+    .poup_up{
+        width: 300px;
+    }
+}
+
+@media (max-height: 300px) {
+    .enviado, .naoEnviado{
+        font-size: 25px !important;
+        font-weight: 200 !important;
+    }
+    .poup_up button{
+        width: 100px;
+        height: 35px;
+        font-size: 10px;
+    }
 }
