@@ -1,8 +1,9 @@
 .divFooter{
     display: flex;
-    background-color: transparent;
+    background-color: rgb(100, 100, 100);
     bottom: 0;
     justify-content: center;
+    color: white;
 }
 
 .footer{
@@ -14,4 +15,8 @@
 
 .autoria{
     margin-bottom: 10px;
+}
+
+.divFooter a{
+    color: blue;
 }

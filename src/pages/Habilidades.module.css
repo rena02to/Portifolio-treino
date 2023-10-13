@@ -1,22 +1,22 @@
-.sobre{
-    background-color: rgb(50, 50, 50);
+.habilidades{
+    background-color: rgb(100, 100, 100);
     display: flex;
     padding-top: 7vh;
     padding-bottom: 7vh;
     justify-content: center;
 }
 
-.sobre h1, .sobre h2{
+.habilidades h1, .habilidades h2{
     font-family: 'Pixelify Sans', cursive;
     font-weight: 500;
     color: rgb(0, 128, 0);
-    text-shadow: 3px 3px 2px rgba(0, 0, 0, 1);
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.9);
 }
 
-.sobre h1{
+.habilidades h1{
     font-size: 3.5em;
 }
 
-.sobre h2{
+.habilidades h2{
     font-size: 2em;
 }

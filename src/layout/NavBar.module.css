@@ -69,11 +69,10 @@
 .contate:hover{
     box-shadow: 0px 0px 3px 3px rgba(0, 0, 255, 0.5);
     text-shadow: 0px 2px 2px rgba(0, 0, 0, 1);
-    letter-spacing: 4px;
-    
+    letter-spacing: 4px; 
 }
 
-.home::before, .projetos::before, .experiencias::before, .sobre::before, .certificacoes::before{
+.home::before, .projetos::before, .habilidades::before, .sobre::before, .certificados::before{
     content: "";
     position: absolute;
     bottom: -5px;
@@ -85,11 +84,11 @@
     transform: translateX(-50%);
 }
 
-.home:hover::before, .projetos:hover::before, .experiencias:hover::before, .sobre:hover::before, .certificacoes:hover::before{
+.home:hover::before, .projetos:hover::before, .habilidades:hover::before, .sobre:hover::before, .certificados:hover::before{
     width: 120%;
 }
 
-.home:hover, .projetos:hover, .experiencias:hover, .sobre:hover, .certificacoes:hover{
+.home:hover, .projetos:hover, .habilidades:hover, .sobre:hover, .certificados:hover{
     text-shadow: 0px 2px 2px rgba(0, 0, 0, 1);
 }
 
@@ -114,7 +113,7 @@
 }
 
 .menu svg:hover{
-    color: #333;
+    color: rgba(0, 200, 0, 0.7);
 }
 
 .sidebar {
