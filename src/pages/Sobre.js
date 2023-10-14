@@ -1,5 +1,5 @@
 import style from './Sobre.module.css';
-import sobreMim from './../imagens/sobre-mim.png';
+import sobreMim from './../imagens/questionBLock.png';
 import ghostBlue from './../imagens/ghost-blue.png';
 import ghostRed from './../imagens/ghost-red.png';
 
