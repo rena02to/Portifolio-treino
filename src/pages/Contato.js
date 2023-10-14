@@ -4,6 +4,7 @@ import emailjs from 'emailjs-com';
 import * as Yup from 'yup';
 import style from './Contato.module.css';
 import Copiar from './../layout/Copiar';
+import carnivorusPlaint from './../imagens/carnivorous-plant.png';
 
 function Contato(){
     const [sendEmail, setSendEmail] = useState(false);
@@ -68,7 +69,11 @@ function Contato(){
 
     return(
         <div id="contato" className={style.contato}>
-            <h1>Contate-me</h1>
+            <div className={style.titulo}>
+                <img alt='carnivorus plaint' className={style.carnivorusPlaint} src={carnivorusPlaint} />
+                <h1>Contate-me</h1>
+                <img alt='carnivorus plaint' className={style.carnivorusPlaint} src={carnivorusPlaint} />
+            </div>
             <Formik initialValues={initialValues} validationSchema={validationSchema} onSubmit={handleSubmit}>
                 {({touched, setTouched}) => (
                     <Form>

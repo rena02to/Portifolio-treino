@@ -1,9 +1,8 @@
 .contato h1, .contato h2{
-    font-family: 'Pixelify Sans', cursive;
-    font-weight: 500;
+    font-family: 'Press Start 2P';
+    font-weight: 100;
     color: rgb(0, 128, 0);
-    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.9);
-    padding-top: 7vh;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 1);
 }
 
 .contato{
@@ -13,15 +12,15 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border-bottom: 2px solid rgba(50, 50, 50, 0.8);
+    padding-top: 7vh;
 }
 
 .contato h1{
-    font-size: 3.5em;
+    font-size: 2.5em;
 }
 
 .contato h2{
-    font-size: 2em;
+    font-size: 1.3em;
     margin-top: 1em;
     padding: 0;
 }
@@ -67,7 +66,7 @@
 }
 
 .contato form input::placeholder, .contato form textarea::placeholder{
-    color: black;
+    color: rgb(170, 170, 170);
 }
 
 .contato form textarea{
@@ -170,9 +169,30 @@
     color: red !important;
 }
 
+.titulo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.carnivorusPlaint{
+    height: 70px;
+}
+
 @media (max-width: 500px) {
     .poup_up{
         width: 300px;
+    }
+    .contato h1{
+        font-size: 1.5em;
+    }
+    .contato h2{
+        font-size: 1em;
+    }
+    .carnivorusPlaint{
+        height: 50px;
     }
 }
 

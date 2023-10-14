@@ -29,9 +29,11 @@ function Home(){
     return(
         <div id="home" className={style.home}>
             <div className={style.texto}>
-                <h2 className={style.ola}>Olá, eu sou</h2>
-                <h1 id='name' className={style.name}>Renato Alves,</h1>
-                <h2 className={style.dev}>Desenvolvedor front-end</h2>
+                <div className={style.conteudo}>
+                    <h2 className={style.ola}>Olá, eu sou</h2>
+                    <h1 id='name' className={style.name}>Renato Alves,</h1>
+                    <h2 className={style.dev}>Desenvolvedor front-end</h2>
+                </div>
                 <div className={style.botoes}>
                     <a href='https://linkedin.com/in/renato-alves-2284a6236' target='_blank' rel='noopener noreferrer'>
                         <div className={style.linkedin}>

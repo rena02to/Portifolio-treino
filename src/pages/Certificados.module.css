@@ -1,5 +1,5 @@
 .certificados{
-    background-color: rgb(50, 50, 50);
+    background-color: rgb(100, 100, 100);
     display: flex;
     padding-top: 7vh;
     padding-bottom: 7vh;
@@ -7,16 +7,29 @@
 }
 
 .certificados h1, .certificados h2{
-    font-family: 'Pixelify Sans', cursive;
-    font-weight: 500;
+    font-family: 'Press Start 2P';
+    font-weight: 100;
     color: rgb(0, 128, 0);
     text-shadow: 3px 3px 2px rgba(0, 0, 0, 1);
 }
 
 .certificados h1{
-    font-size: 3.5em;
+    font-size: 2.5em;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .certificados h2{
     font-size: 2em;
+}
+
+.title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.cogumelo{
+    height: 50px;
 }

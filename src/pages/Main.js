@@ -7,6 +7,7 @@ import Contato from './Contato';
 import Footer from './../layout/Footer';
 import Certificados from './Certificados';
 import Habilidades from './Habilidades';
+import Experiencias from './Experiencias';
 
 function Main(){
 
@@ -15,9 +16,10 @@ function Main(){
             <NavBar />
             <Home />
             <Projetos />
+            <Sobre />
+            <Experiencias />
             <Certificados />
             <Habilidades />
-            <Sobre />
             <Contato />
             <Footer />
         </div>

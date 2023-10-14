@@ -1,22 +1,101 @@
 .sobre{
-    background-color: rgb(50, 50, 50);
+    background-color: rgb(100, 100, 100);
     display: flex;
     padding-top: 7vh;
     padding-bottom: 7vh;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .sobre h1, .sobre h2{
-    font-family: 'Pixelify Sans', cursive;
-    font-weight: 500;
+    font-family: 'Press Start 2P';
+    font-weight: 100;
     color: rgb(0, 128, 0);
     text-shadow: 3px 3px 2px rgba(0, 0, 0, 1);
 }
 
 .sobre h1{
-    font-size: 3.5em;
+    font-size: 2.5em;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .sobre h2{
-    font-size: 2em;
+    font-size: 1.2em;
+}
+
+.questionBlock{
+    height: 300px;
+    animation: mover 1.5s infinite;
+}
+
+@keyframes mover{
+    0%{
+        transform: translateY(-30px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(-30px);
+    }
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.conteudo p{
+    font-size: 1.2em;
+    color: white;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.ghost{
+    height: 40px;
+}
+
+@media (max-width: 1900px){
+    .conteudo{
+        width: 80%;
+    }
+}
+
+@media (max-width: 1050px){
+    .conteudo{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 570px){
+    .sobre h1{
+        font-size: 1.5em;
+    }
+    .questionBlock{
+        height: 250px;
+    }
+}
+
+@media (max-width: 300px){
+    .sobre h1{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }

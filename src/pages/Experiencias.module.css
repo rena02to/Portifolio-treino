@@ -1,4 +1,4 @@
-.habilidades{
+.experiencias{
     background-color: rgb(189, 189, 189);
     display: flex;
     padding-top: 7vh;
@@ -6,17 +6,17 @@
     justify-content: center;
 }
 
-.habilidades h1, .habilidades h2{
+.experiencias h1, .experiencias h2{
     font-family: 'Press Start 2P';
     font-weight: 100;
     color: rgb(0, 128, 0);
     text-shadow: 3px 3px 2px rgba(0, 0, 0, 1);
 }
 
-.habilidades h1{
+.experiencias h1{
     font-size: 2.5em;
 }
 
-.habilidades h2{
+.experiencias h2{
     font-size: 2em;
 }

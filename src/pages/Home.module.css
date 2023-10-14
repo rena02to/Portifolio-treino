@@ -14,8 +14,8 @@
 }
   
 .name {
-    color: rgb(0, 255, 0);
-    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.7);
+    color: rgb(255, 255, 0);
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 1);
     font-size: 4em;
     margin: 0;
 }
@@ -51,6 +51,11 @@
     flex-direction: column;
     justify-content: center;
     margin-left: 15%;
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
 }
 
 .home a{
@@ -124,12 +129,6 @@
 
 @media (max-width: 1300px){
     .home img{
-        height: 65%;
-    }
-}
-
-@media (max-width: 1200px){
-    .home img{
         height: 60%;
     }
 }
@@ -143,12 +142,34 @@
     }
 }
 
-@media (max-width: 1000px){
+@media (max-width: 1250px){
     .home{
         flex-direction: column-reverse;
         justify-content: center;
     }
     .home img{
         height: 25em;
+    }
+}
+
+@media (max-width: 580px){
+    .linkedin, .github{
+        width: 150px;
+    }
+}
+
+@media (max-height: 300px) {
+    .botoes{
+        flex-direction: column;
+        margin-left: 2em;
+    }
+    .github{
+        margin-left: 0;
+        margin-top: 1.5em;
+    }
+    .texto{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
 }
