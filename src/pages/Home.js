@@ -49,7 +49,7 @@ function Home(){
                     </a>
                 </div>
             </div>
-            {windowSize > 700 && <img alt='dev' src={dev} />}
+            {windowSize > 450 && <img alt='dev' src={dev} />}
         </div>
     );
 }

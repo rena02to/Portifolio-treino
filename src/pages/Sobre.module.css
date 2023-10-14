@@ -72,30 +72,17 @@
     height: 40px;
 }
 
-@media (max-width: 1900px){
+@media (max-width: 1500px){
     .conteudo{
         width: 80%;
     }
 }
 
-@media (max-width: 1050px){
+@media (max-width: 1000px){
     .conteudo{
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 570px){
-    .sobre h1{
-        font-size: 1.5em;
+        flex-direction: column-reverse;
     }
     .questionBlock{
-        height: 250px;
-    }
-}
-
-@media (max-width: 300px){
-    .sobre h1{
-        margin-left: 10px;
-        margin-right: 10px;
+        height: 200px;
     }
 }

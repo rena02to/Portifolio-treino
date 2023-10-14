@@ -113,7 +113,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 9999;
 }
 
@@ -145,20 +145,21 @@
     letter-spacing: 4px;
 }
 
-.enviado, .naoEnviadom ,.enviando{
-    margin-top: 0 ;
+.enviado, .naoEnviadom, .enviando{
+    font-size: 1.5em !important;
+    margin-top: 1em;
     margin-bottom: 1em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
 }
 
 .enviado, .naoEnviado{
-    font-size: 40px !important;
     font-weight: 300 !important;
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.8) !important;
 }
 
 .enviando{
     color: rgb(75, 75, 75) !important;
-    font-size: 30px !important;
     font-weight: 200 !important;
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2) !important;
     padding: 0 !important;
@@ -185,22 +186,9 @@
     .poup_up{
         width: 300px;
     }
-    .contato h1{
-        font-size: 1.5em;
-    }
-    .contato h2{
-        font-size: 1em;
-    }
-    .carnivorusPlaint{
-        height: 50px;
-    }
 }
 
 @media (max-height: 300px) {
-    .enviado, .naoEnviado{
-        font-size: 25px !important;
-        font-weight: 200 !important;
-    }
     .poup_up button{
         width: 100px;
         height: 35px;
