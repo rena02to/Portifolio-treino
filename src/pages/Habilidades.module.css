@@ -1,22 +1,92 @@
-.habilidades{
+.habilidades, .habilidadesMais{
     background-color: rgb(189, 189, 189);
     display: flex;
+    flex-direction: column;
     padding-top: 7vh;
-    padding-bottom: 7vh;
-    justify-content: center;
+    padding-bottom: 10%;
+    justify-content: top;
+    align-items: center;
+    position: relative;
 }
 
-.habilidades h1, .habilidades h2{
+.habilidades{
+    height: 800px;
+}
+
+.habilidadesMais{
+    height: auto;
+}
+
+.titulo{
     font-family: 'Press Start 2P';
     font-weight: 100;
     color: rgb(0, 128, 0);
     text-shadow: 3px 3px 2px rgba(0, 0, 0, 1);
-}
-
-.habilidades h1{
     font-size: 2.5em;
+    margin-bottom: 70px;
 }
 
-.habilidades h2{
+.tecnologias h2{
     font-size: 2em;
+    margin-bottom: 0em;
+    margin-top: 0;
+    color: rgb(255, 255, 0);
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 1);
+}
+
+.tecnologias{
+    width: 60%;
+    overflow: hidden;
+    height: 100%;
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.conteudo p{
+    width: 75%;
+}
+
+.html, .css, .js, .git, .github, .python{
+    margin-top: 50px;
+}
+
+.tecnologias svg{
+    height: 100px;
+    width: 100px;
+}
+
+.maisMenos{
+    height: 50px;
+    width: 150px;
+    background-color: transparent;
+    color: black;
+    border: 0px solid transparent;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 6px rgba(0, 155, 0, 0.5);
+}
+
+.maisMenos:hover{
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 1);
+    letter-spacing: 4px;
+}
+
+@media (max-width: 700px){
+    .titulo{
+        font-size: 2em;
+    }
+    .tecnologias h2{
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 1300px){
+    .tecnologias{
+        width: 80%;
+    }
 }

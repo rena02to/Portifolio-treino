@@ -5,7 +5,7 @@ import { TbBrandGithubFilled } from 'react-icons/tb';
 import { useEffect, useState } from 'react';
 
 function Home(){
-    const [windowSize, setWindowSize] = useState(window.innerHeight);
+    const [windowSize, setWindowSize] = useState(window.outerHeight);
 
     useEffect(() => {
         const elemento = document.getElementById('name');
@@ -19,7 +19,7 @@ function Home(){
     }, [])
 
     const updateWindowSize = () => {
-        setWindowSize(window.innerHeight);
+        setWindowSize(window.outerHeight);
     };
 
     useEffect(() => {
@@ -49,7 +49,7 @@ function Home(){
                     </a>
                 </div>
             </div>
-            {windowSize > 450 && <img alt='dev' src={dev} />}
+            {windowSize > 600 && <img alt='dev' src={dev} />}
         </div>
     );
 }

@@ -5,7 +5,7 @@ function Certificados(){
     return(
         <div id="certificados" className={style.certificados}>
             <div className={style.title}>
-            <img alt='cogumelo' src={Cogumelo} className={style.cogumelo} />
+                <img alt='cogumelo' src={Cogumelo} className={style.cogumelo} />
                 <h1>Certificados</h1>
                 <img alt='cogumelo' src={Cogumelo} className={style.cogumelo} />
             </div>

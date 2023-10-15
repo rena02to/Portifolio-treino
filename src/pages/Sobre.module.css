@@ -47,11 +47,11 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 60%;
+    width: 70%;
 }
 
 .conteudo p{
-    font-size: 1.2em;
+    font-size: 1.1em;
     color: white;
 }
 
@@ -84,5 +84,11 @@
     }
     .questionBlock{
         height: 200px;
+    }
+}
+
+@media (max-width: 700px){
+    .titulo h1{
+        font-size: 2em;
     }
 }

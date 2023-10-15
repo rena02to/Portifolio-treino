@@ -31,5 +31,11 @@
 }
 
 .cogumelo{
-    height: 50px;
+    height: 40px;
+}
+
+@media (max-width: 700px){
+    .certificados h1{
+        font-size: 2em;
+    }
 }

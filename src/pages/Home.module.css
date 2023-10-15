@@ -171,4 +171,7 @@
         flex-direction: column-reverse;
         justify-content: center;
     }
+    .home img{
+        height: 20em;
+    }
 }
