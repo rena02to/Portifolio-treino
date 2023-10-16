@@ -4,6 +4,7 @@ import { FaLinkedinIn } from 'react-icons/fa';
 import { TbBrandGithubFilled } from 'react-icons/tb';
 import { useEffect, useState } from 'react';
 
+
 function Home(){
     const [windowSize, setWindowSize] = useState(window.outerHeight);
 

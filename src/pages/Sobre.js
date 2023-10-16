@@ -2,8 +2,26 @@ import style from './Sobre.module.css';
 import sobreMim from './../imagens/questionBLock.png';
 import ghostBlue from './../imagens/ghost-blue.png';
 import ghostRed from './../imagens/ghost-red.png';
+import ScrollReveal from 'scrollreveal';
+import { useRef, useEffect } from 'react';
 
 function Sobre(){
+    const sr = ScrollReveal({
+        reset: true,
+        duration: 2500,
+        distance: '70px',
+    });
+
+    const refDiv = useRef(null);
+
+    useEffect(() => {
+        sr.reveal(refDiv.current);
+        return () => {
+            sr.destroy();
+        };
+    });
+
+
     return(
         <div className={style.sobre} id="sobre">
             <div className={style.titulo}>
@@ -11,7 +29,7 @@ function Sobre(){
                 <h1>Sobre mim</h1>
                 <img alt='ghost-red' className={style.ghost} src={ghostRed} />
             </div>
-            <div className={style.conteudo}>
+            <div className={style.conteudo} ref={refDiv}>
                 <div className={style.texto}>
                     <p>Meu nome é Renato Alves, sou um desenvolvedor front-end entusista, com cerca de um ano de experiência, focado em criar interfaces web impressionantes e responsivas. Minha jornada é impulsionada pelo meu forte interesse pela tecnologia e um genuíno gosto pelo universo geek.</p>
                     <p>Minha jornada no desenvolvimento front-end começou há aproximadamente um ano, e desde então, tenho trabalhado em projetos pessoais para aprimorar minhas habilidades. Minha missão é combinar design criativo com códigos sólidos para proporcionar experiências excepcionais na web.</p>

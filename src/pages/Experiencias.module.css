@@ -4,9 +4,11 @@
     padding-top: 7vh;
     padding-bottom: 7vh;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
-.experiencias h1, .experiencias h2{
+.experiencias h1{
     font-family: 'Press Start 2P';
     font-weight: 100;
     color: rgb(0, 128, 0);
@@ -15,14 +17,93 @@
 
 .experiencias h1{
     font-size: 2.5em;
+    margin-bottom: 50px;
 }
 
-.experiencias h2{
-    font-size: 2em;
+.conteudo{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    align-content: center;
+    align-items: center;
 }
+
+.lista{
+    margin-right: 70px;
+    list-style: none;
+}
+  
+.item, .itemAtivo {
+    cursor: pointer;
+    padding: 10px;
+    color: rgb(255, 255, 0);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+    font-size: 1.2em;
+    font-weight: 200;
+}
+  
+.item {
+    border-left: 4px solid gray;
+}
+
+.itemAtivo {
+    border-left: 4px solid rgb(0, 100, 255);
+}
+
+.item:hover, .itemAtivo:hover{
+    background-color: rgba(100, 100, 100, 0.2);
+}
+
+.superior{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.legenda h2{
+    font-size: 1.3em;
+    font-weight: 100;
+}
+
+.date{
+    min-width: 10em;
+    padding-left: 5em;
+}
+
+.legenda{
+    transition: top 0.5 ease-in-out;
+}
+
+.showDescription{
+    animation: slow 0.5s 1;
+}
+
+@keyframes slow{
+    0% {
+      opacity: 0;
+      transform: translateX(-60px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
 
 @media (max-width: 700px){
     .experiencias h1{
         font-size: 2em;
+    }
+}
+
+@media (max-width: 1200px) {
+    .conteudo{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .conteudo{
+        width: 90%;
     }
 }

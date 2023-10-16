@@ -1,5 +1,6 @@
 import {Formik, Form, Field, ErrorMessage} from 'formik';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
+import ScrollReveal from 'scrollreveal';
 import emailjs from 'emailjs-com';
 import * as Yup from 'yup';
 import style from './Contato.module.css';
@@ -67,55 +68,76 @@ function Contato(){
         }
     }, [enviando]);
 
+    const sr = ScrollReveal({
+        reset: true,
+        duration: 2500,
+        distance: '70px',
+    });
+
+    const refGeral = useRef(null);
+    const refH2 = useRef(null);
+    const refDiv = useRef(null);
+
+    useEffect(() => {
+        sr.reveal(refGeral.current);
+        sr.reveal(refH2.current);
+        sr.reveal(refDiv.current);
+        return () => {
+            sr.destroy();
+        };
+    });
+
     return(
         <div id="contato" className={style.contato}>
-            <div className={style.titulo}>
-                <img alt='carnivorus plaint' className={style.carnivorusPlaint} src={carnivorusPlaint} />
-                <h1>Contate-me</h1>
-                <img alt='carnivorus plaint' className={style.carnivorusPlaint} src={carnivorusPlaint} />
-            </div>
-            <Formik initialValues={initialValues} validationSchema={validationSchema} onSubmit={handleSubmit}>
-                {({touched, setTouched}) => (
-                    <Form>
-                        <Field className={style.name} name='name' type='text' placeholder="Seu nome e sobrenome"/>
-                        <ErrorMessage name='name' component='div' className={style.error}/>
-                        
-                        <Field className={style.email} name='email' type='email' placeholder="Seu e-mail"/>
-                        <ErrorMessage name='email' component='div' className={style.error}/>
-                        
-                        <Field className={style.assunto} name='assunto' type='text' placeholder="Assunto"/>
-                        <ErrorMessage name='assunto' component='div' className={style.error}/>
-                        
-                        <Field className={style.conteudo} name='conteudo' as='textarea' placeholder="Seu texto..."/>
-                        <ErrorMessage name='conteudo' component='div' className={style.error}/>
-                        
-                        <button type='submit'>Enviar</button>
-                    </Form>
-                )}
-            </Formik>
-            <h2>Ou me mande um e-mail</h2>
-            <Copiar />
-            {sendEmail && (
-                <div className={style.main}>
-                    <div className={style.poup_up}>
-                        {enviando ? (
-                            <h1 className={style.enviando}>Aguarde, sua mensagem está sendo enviada...</h1>
-                        ) : (
-                            enviado ? (
-                                <>
-                                    <h1 className={style.enviado}>Mensagem enviada com sucesso!</h1>
-                                    <button className={style.ok} onClick={fecharPoupUp}>Feito</button>
-                                </>
-                            ) : (
-                                <>
-                                    <h1 className={style.naoEnviado}>Falha ao enviar mensagem!</h1>
-                                    <button className={style.ok} onClick={fecharPoupUp}>Feito</button>
-                                </>
-                            )
-                        )}
-                    </div>
+                <div className={style.titulo}>
+                    <img alt='carnivorus plaint' className={style.carnivorusPlaint} src={carnivorusPlaint} />
+                    <h1>Contate-me</h1>
+                    <img alt='carnivorus plaint' className={style.carnivorusPlaint} src={carnivorusPlaint} />
                 </div>
-            )}
+                <div ref={refGeral}>
+                    <Formik initialValues={initialValues} validationSchema={validationSchema} onSubmit={handleSubmit}>
+                        {({touched, setTouched}) => (
+                            <Form>
+                                <Field className={style.name} name='name' type='text' placeholder="Seu nome e sobrenome"/>
+                                <ErrorMessage name='name' component='div' className={style.error}/>
+                                
+                                <Field className={style.email} name='email' type='email' placeholder="Seu e-mail"/>
+                                <ErrorMessage name='email' component='div' className={style.error}/>
+                                
+                                <Field className={style.assunto} name='assunto' type='text' placeholder="Assunto"/>
+                                <ErrorMessage name='assunto' component='div' className={style.error}/>
+                                
+                                <Field className={style.conteudo} name='conteudo' as='textarea' placeholder="Seu texto..."/>
+                                <ErrorMessage name='conteudo' component='div' className={style.error}/>
+                                
+                                <button type='submit'>Enviar</button>
+                            </Form>
+                        )}
+                    </Formik>
+                </div>
+                <h2 ref={refH2}>Ou me mande um e-mail</h2>
+                <div ref={refDiv}><Copiar/></div>
+                {sendEmail && (
+                    <div className={style.main}>
+                        <div className={style.poup_up}>
+                            {enviando ? (
+                                <h1 className={style.enviando}>Aguarde, sua mensagem está sendo enviada...</h1>
+                            ) : (
+                                enviado ? (
+                                    <>
+                                        <h1 className={style.enviado}>Mensagem enviada com sucesso!</h1>
+                                        <button className={style.ok} onClick={fecharPoupUp}>Feito</button>
+                                    </>
+                                ) : (
+                                    <>
+                                        <h1 className={style.naoEnviado}>Falha ao enviar mensagem!</h1>
+                                        <button className={style.ok} onClick={fecharPoupUp}>Feito</button>
+                                    </>
+                                )
+                            )}
+                        </div>
+                    </div>
+                )}
         </div>
     );
 }
