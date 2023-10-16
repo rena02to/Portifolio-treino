@@ -21,7 +21,7 @@ function Habilidades(){
         reset: true,
         duration: 2500,
         distance: '70px',
-    });
+    }, []);
 
     const refDiv = useRef(null);
 

@@ -85,7 +85,7 @@ function Contato(){
         return () => {
             sr.destroy();
         };
-    });
+    }, []);
 
     return(
         <div id="contato" className={style.contato}>

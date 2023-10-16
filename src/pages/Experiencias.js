@@ -21,11 +21,11 @@ function Experiencias() {
       
     useEffect(() => {
         sr.reveal(refDiv.current);
-    });
+    }, []);
 
     const handleItemClick = (item) => {
         setActiveItem(item);
-        if(activeItem.key != item.key){
+        if(activeItem.key !== item.key){
             const legendaElement = document.getElementById('legenda');
             legendaElement.classList.add(style.showDescription);
             

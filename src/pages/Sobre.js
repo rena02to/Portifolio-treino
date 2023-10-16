@@ -19,7 +19,7 @@ function Sobre(){
         return () => {
             sr.destroy();
         };
-    });
+    }, []);
 
 
     return(
