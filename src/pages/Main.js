@@ -15,9 +15,9 @@ function Main(){
         <div className={style.main}>
             <NavBar />
             <Home />
-            <Projetos />
             <Sobre />
             <Experiencias />
+            <Projetos />
             <Certificados />
             <Habilidades />
             <Contato />

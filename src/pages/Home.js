@@ -13,11 +13,12 @@ function Home(){
         const texto = elemento.innerHTML.split('');
         elemento.innerHTML = '';
         
-        texto.forEach((letra, i) => {
-            setTimeout(() =>
-                elemento.innerHTML += letra, 200 * i)
-        });
-    }, [])
+        setTimeout(() => {
+                texto.forEach((letra, i) => {
+                    setTimeout(() => (elemento.innerHTML += letra), 250 * i);
+                });
+            }, 500);
+        }, []);
 
     const updateWindowSize = () => {
         setWindowSize(window.outerHeight);

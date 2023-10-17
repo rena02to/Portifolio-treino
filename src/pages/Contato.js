@@ -1,6 +1,5 @@
 import {Formik, Form, Field, ErrorMessage} from 'formik';
-import { useState, useEffect, useRef } from 'react';
-import ScrollReveal from 'scrollreveal';
+import { useState, useEffect } from 'react';
 import emailjs from 'emailjs-com';
 import * as Yup from 'yup';
 import style from './Contato.module.css';
@@ -68,25 +67,6 @@ function Contato(){
         }
     }, [enviando]);
 
-    const sr = ScrollReveal({
-        reset: true,
-        duration: 2500,
-        distance: '70px',
-    });
-
-    const refGeral = useRef(null);
-    const refH2 = useRef(null);
-    const refDiv = useRef(null);
-
-    useEffect(() => {
-        sr.reveal(refGeral.current);
-        sr.reveal(refH2.current);
-        sr.reveal(refDiv.current);
-        return () => {
-            sr.destroy();
-        };
-    }, []);
-
     return(
         <div id="contato" className={style.contato}>
                 <div className={style.titulo}>
@@ -94,7 +74,7 @@ function Contato(){
                     <h1>Contate-me</h1>
                     <img alt='carnivorus plaint' className={style.carnivorusPlaint} src={carnivorusPlaint} />
                 </div>
-                <div ref={refGeral}>
+                <div>
                     <Formik initialValues={initialValues} validationSchema={validationSchema} onSubmit={handleSubmit}>
                         {({touched, setTouched}) => (
                             <Form>
@@ -115,8 +95,8 @@ function Contato(){
                         )}
                     </Formik>
                 </div>
-                <h2 ref={refH2}>Ou me mande um e-mail</h2>
-                <div ref={refDiv}><Copiar/></div>
+                <h2>Ou me mande um e-mail</h2>
+                <div><Copiar/></div>
                 {sendEmail && (
                     <div className={style.main}>
                         <div className={style.poup_up}>

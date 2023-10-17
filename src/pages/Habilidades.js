@@ -1,8 +1,7 @@
 import { FaHtml5, FaCss3Alt, FaReact, FaPython, FaGitAlt, FaGithub } from 'react-icons/fa';
 import { TbBrandJavascript } from 'react-icons/tb';
 import style from './Habilidades.module.css';
-import ScrollReveal from 'scrollreveal';
-import { useState, useRef, useEffect } from 'react';
+import { useState } from 'react';
 
 function Habilidades(){
     const [verMais, setVerMais]  = useState(false);
@@ -16,26 +15,11 @@ function Habilidades(){
             setValor('Ver mais');
         }
     }
-
-    const sr = ScrollReveal({
-        reset: true,
-        duration: 2500,
-        distance: '70px',
-    }, []);
-
-    const refDiv = useRef(null);
-
-    useEffect(() => {
-        sr.reveal(refDiv.current);
-        return () => {
-            sr.destroy();
-        };
-    });
     
     return(
         <div id="habilidades" className={verMais ? style.habilidadesMais : style.habilidades}>
             <h1 className={style.titulo}>Habilidades</h1>
-            <div className={style.tecnologias} ref={refDiv}>
+            <div className={style.tecnologias}>
                 
                 <div className={style.react}>
                     <h2>React</h2>

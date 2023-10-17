@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import style from './Experiencias.module.css';
-import ScrollReveal from 'scrollreveal';
-import { useRef, useEffect } from 'react';
 
 function Experiencias() {
     const items = [
@@ -11,18 +9,6 @@ function Experiencias() {
 
     const [activeItem, setActiveItem] = useState(items[1]);  
 
-    const refDiv = useRef(null);
-
-    const sr = ScrollReveal({
-        reset: true,
-        duration: 2500,
-        distance: '70px',
-    });
-      
-    useEffect(() => {
-        sr.reveal(refDiv.current);
-    }, []);
-
     const handleItemClick = (item) => {
         setActiveItem(item);
         if(activeItem.key !== item.key){
@@ -31,14 +17,14 @@ function Experiencias() {
             
             setTimeout(() => {
                 legendaElement.classList.remove(style.showDescription);
-            }, 2500);
+            }, 1000);
         }
     };      
 
   return (
     <div className={style.experiencias} id='experiencias'>
       <h1>Experiências</h1>
-      <div className={style.conteudo} ref={refDiv}>
+      <div className={style.conteudo}>
         <ul className={style.lista}>
           {items.map((item) => (<li key={item.key} className={item.text === activeItem.text ? style.itemAtivo : style.item} onClick={() => handleItemClick(item)}>
             {item.value}
