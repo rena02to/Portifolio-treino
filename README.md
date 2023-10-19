@@ -15,6 +15,7 @@
   /src/imagens/ghost-red.png/ | <a href="https://br.freepik.com/icone/fantasma_705890" target="_blank" rel="noopener noreferrer">Imagem de Smashicons</a> no Freepik
   /src/imagens/cogumelo.png/ | <a href="https://br.freepik.com/icone/cogumelo_528111#fromView=search&term=cogumelo+de+vida+super+mario+world&page=1&position=37&track=ais" target="_blank" rel="noopener noreferrer">Imagem de Those Icons</a> no Freepik
   /src/imagens/carnivorous-plant.png/ | <a href="https://br.freepik.com/icone/planta-carnivora_528099#fromView=resource_detail&position=15" target="_blank" rel="noopener noreferrer">Imagem de Those Icons</a> no Freepik
+  /src/imagens/comingSoon.jpg/ | <a href="https://br.freepik.com/vetores-gratis/em-breve-em-projeto-de-ilustracao-de-construcao_13732339.htm#page=2&query=em%20breve&position=1&from_view=search&track=ais">Imagem de starline</a> no Freepik
 
   <hr>
   <h2>Licença</h2>
