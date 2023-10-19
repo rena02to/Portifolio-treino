@@ -142,12 +142,6 @@
     .texto{
         margin-left: 10%;
     }
-    .ola, .dev{
-        font-size: 1.5;
-    }
-    .name{
-        font-size: 3.5em;
-    }
 }
 
 @media (max-width: 1150px){
@@ -158,12 +152,6 @@
     .texto{
         margin-left: 5%;
     }
-    .ola, .dev{
-        font-size: 1;
-    }
-    .name{
-        font-size: 2.5em;
-    }
 }
 
 @media (max-width: 1000px){
@@ -173,5 +161,14 @@
     }
     .home img{
         height: 20em;
+    }
+}
+
+@media (max-width: 700px){
+    .ola, .dev{
+        font-size: 1.5em;
+    }
+    .name{
+        font-size: 3.5em;
     }
 }

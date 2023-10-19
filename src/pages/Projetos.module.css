@@ -1,5 +1,5 @@
 .projetos{
-    background-color: rgb(189, 189, 189);
+    background-color: rgb(100, 100, 100);
     display: flex;
     padding-top: 7vh;
     padding-bottom: 7vh;
@@ -27,6 +27,12 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.carnivorusPlaint{
+    height: 70px;
 }
 
 @media (max-width: 700px){

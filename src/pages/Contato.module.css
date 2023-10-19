@@ -17,11 +17,12 @@
 
 .contato h1{
     font-size: 2.5em;
+    margin-bottom: 50px;
 }
 
 .contato h2{
     font-size: 1.3em;
-    margin-top: 1em;
+    margin-top: 2em;
     padding: 0;
 }
 
@@ -35,7 +36,6 @@
     border: 1px solid black;
     outline: none;
     background-color: transparent;
-    color: white;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 20px;
@@ -51,6 +51,7 @@
     cursor: pointer;
     font-size: medium;
     margin-bottom: 0;
+    margin-bottom: 50px;
 }
 
 .contato form button:hover{
@@ -66,7 +67,7 @@
 }
 
 .contato form input::placeholder, .contato form textarea::placeholder{
-    color: rgb(170, 170, 170);
+    color: rgb(80, 80, 80);
 }
 
 .contato form textarea{
@@ -89,7 +90,7 @@
     padding: 5px;
     text-align: center;
 }
-  
+
 .error::before {
     content: '';
     position: absolute;
@@ -168,18 +169,6 @@
 
 .naoEnviado{
     color: red !important;
-}
-
-.titulo{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 50px;
-}
-
-.carnivorusPlaint{
-    height: 70px;
 }
 
 @media (max-width: 700px){

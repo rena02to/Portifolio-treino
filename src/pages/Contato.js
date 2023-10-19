@@ -3,8 +3,6 @@ import { useState, useEffect } from 'react';
 import emailjs from 'emailjs-com';
 import * as Yup from 'yup';
 import style from './Contato.module.css';
-import Copiar from './../layout/Copiar';
-import carnivorusPlaint from './../imagens/carnivorous-plant.png';
 
 function Contato(){
     const [sendEmail, setSendEmail] = useState(false);
@@ -69,11 +67,7 @@ function Contato(){
 
     return(
         <div id="contato" className={style.contato}>
-                <div className={style.titulo}>
-                    <img alt='carnivorus plaint' className={style.carnivorusPlaint} src={carnivorusPlaint} />
-                    <h1>Contate-me</h1>
-                    <img alt='carnivorus plaint' className={style.carnivorusPlaint} src={carnivorusPlaint} />
-                </div>
+                <h1>Contate-me</h1>
                 <div>
                     <Formik initialValues={initialValues} validationSchema={validationSchema} onSubmit={handleSubmit}>
                         {({touched, setTouched}) => (
@@ -95,8 +89,6 @@ function Contato(){
                         )}
                     </Formik>
                 </div>
-                <h2>Ou me mande um e-mail</h2>
-                <div><Copiar/></div>
                 {sendEmail && (
                     <div className={style.main}>
                         <div className={style.poup_up}>

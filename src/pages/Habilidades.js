@@ -1,4 +1,5 @@
-import { FaHtml5, FaCss3Alt, FaReact, FaPython, FaGitAlt, FaGithub } from 'react-icons/fa';
+import { FaHtml5, FaCss3Alt, FaReact, FaGitAlt, FaGithub } from 'react-icons/fa';
+import Cogumelo from './../imagens/cogumelo.png';
 import { TbBrandJavascript } from 'react-icons/tb';
 import style from './Habilidades.module.css';
 import { useState } from 'react';
@@ -18,7 +19,11 @@ function Habilidades(){
     
     return(
         <div id="habilidades" className={verMais ? style.habilidadesMais : style.habilidades}>
-            <h1 className={style.titulo}>Habilidades</h1>
+            <div className={style.title}>
+                <img alt='cogumelo' src={Cogumelo} className={style.cogumelo} />
+                <h1>Habilidades</h1>
+                <img alt='cogumelo' src={Cogumelo} className={style.cogumelo} />
+            </div>
             <div className={style.tecnologias}>
                 
                 <div className={style.react}>
@@ -66,14 +71,6 @@ function Habilidades(){
                     <div className={style.conteudo}>
                         <p>O GitHub é minha plataforma de escolha para compartilhar meu trabalho com a comunidade de desenvolvedores. É um espaço onde posso aprender, colaborar em projetos de código aberto e contribuir para o avanço da tecnologia.</p>
                         <FaGithub />
-                    </div>
-                </div>
-
-                <div className={style.python}>
-                    <h2>Python</h2>
-                    <div className={style.conteudo}>
-                        <p>Python é uma linguagem incrivelmente versátil que uso no desenvolvimento de projetos universitários que são executados interface em linha de comando. Sua legibilidade e riqueza de bibliotecas tornam-no uma escolha valiosa em meu conjunto de ferramentas.</p>
-                        <FaPython />
                     </div>
                 </div>
             </div>
