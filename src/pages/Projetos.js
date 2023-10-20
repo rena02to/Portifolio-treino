@@ -24,7 +24,7 @@ function Projetos(){
                     </spam>
                 </div>
                 <h2 className={style.titleProject}>Portifólio Principal</h2>
-                <p className={style.legendProject}>Meu futuro portifólio principal que será criado para divulgar todos os meus trabalhos e projetos, de forma que estará em constante evolução e desenvolvimento.</p>
+                <p className={style.legendProject}>Meu futuro portifólio principal que será criado para divulgar todos os meus trabalhos e projetos, de forma que estará em constante evolução e desenvolvimento. Este projeto está sendo criado usando React.JS e Next.js.</p>
                 <p className={style.legend2Project}>Portanto, se quiser acompanhar todos os meus trabalhos, fique de olho nesse portifólio.</p>
             </div>
         </div>
