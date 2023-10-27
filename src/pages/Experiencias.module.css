@@ -78,6 +78,10 @@
     animation: slow 0.5s 1;
 }
 
+.legenda p{
+    font-size: auto !important;
+}
+
 @keyframes slow{
     0% {
       opacity: 0;
