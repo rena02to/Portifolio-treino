@@ -91,7 +91,7 @@
 }
 
 @media (max-width: 700px){
-    .titulo{
+    .title h1{
         font-size: 2em;
     }
     .tecnologias h2{
