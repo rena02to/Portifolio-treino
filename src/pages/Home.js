@@ -37,7 +37,7 @@ function Home(){
                     <h2 className={style.dev}>Desenvolvedor front-end</h2>
                 </div>
                 <div className={style.botoes}>
-                    <a href='https://linkedin.com/in/rena02to/' target='_blank' rel='noopener noreferrer'>
+                    <a href='https://linkedin.com/in/renatosalves/' target='_blank' rel='noopener noreferrer'>
                         <div className={style.linkedin}>
                             <FaLinkedinIn />
                             <p>Linkedin</p>
