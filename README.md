@@ -1,7 +1,7 @@
 <div align="center">
   <h1>Renato Alves | Front-end Developer</h1>
   <hr>
-  <p>Conheça o portifólio <a href='https://renato-alves-portifolio.vercel.app' target="_blank" rel="noopener noreferrer">clicando aqui.</a></p>
+  <p>Conheça o projeto <a href='https://renato-alves-portifolio.vercel.app' target="_blank" rel="noopener noreferrer">clicando aqui.</a></p>
   <hr>
   <h2>Crédito aos criadores</h2>
 
